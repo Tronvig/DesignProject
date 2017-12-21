@@ -24,7 +24,7 @@ The sub header should show the form name. Clicking on the name would allow the u
 
 ## Main Form
 
-The main form area should include a default question or a set of default questions as well as a way to add new questions. Question sets should be grouped together. Each group should have a group name that is editable as well as group settings. Below the last group of questions a button or link to create a new group should be shown. Next to the create group button a page break button should be available to break up the form into mulitple pages.  
+The main form area should include a default question or a set of default questions as well as a way to add new questions. Question sets should be grouped together. Each group should have a group name that is editable as well as group settings. Below the last group of questions a button or link to create a new group should be shown. Next to the create group button a page break button should be available to break up the form into multiple pages.  
 
 ## Questions
 
@@ -44,18 +44,18 @@ Clicking on the question in an un-editable area would open the question controls
 
 ## Question Controls
 
-### Question Types
+Question type controls the input type. Underneath question type the sub-type is shown, text entry for example would include sub-types options of single line, multi line, or password. Further control settings would be shown below the sub-type, a multiple choice input for example would have options to change the number of choices as well as an option to change from single choice (radio buttons) to multiple choice (checkboxes). 
 
-Question type controls the input type. Underneath question type the sub-type is shown, text entry for example would include sub-types options of single line, multi line, or password. Further control settings would be shown below the sub-type, a multiple choice input for example would have options to change the number of choices as well as an option to change from single choice (radio buttons) to multiple choice (check boxes). 
+## Question Types
 
-#### Text Entry
+### Text Entry
 
 **Text Type**
 - Single Line
 - Multiple Line
 - Password
 
-#### Number Entry
+### Number Entry
 
 **Number Type**
 - Number
@@ -64,18 +64,18 @@ Question type controls the input type. Underneath question type the sub-type is 
 - [list of available currencies]
 **Decimal Places**
 
-#### Dropdown
+### Dropdown
 
 ~~no options~~
 
-#### Multiple Choice
+### Multiple Choice
 
 **Number of Choices**
 **Choice Type**
 - Single Choice
 - Multiple Choice
 
-#### Scale
+### Scale
 
 **Scale Type**
 - Points
@@ -85,7 +85,7 @@ Question type controls the input type. Underneath question type the sub-type is 
 **Point Labels** 
 
 
-#### Grid (Multiple Choice Scale)
+### Grid (Multiple Choice Scale)
 
 **Number of Questions**
 **Number of Columns**
@@ -94,30 +94,30 @@ Question type controls the input type. Underneath question type the sub-type is 
 - Single Choice
 - Multiple Choice
 
-#### Date
+### Date
 
 **Date Type**
 - Single Date
 - Date Range
 
-#### Time
+### Time
 
 **Time Type**
 - Standard
 - Military
 **Timezone**
 
-#### Picture
+### Picture
 
 **Source**
 - URL
 - Upload
 
-#### File Upload
+### File Upload
 
 **File Size Limit**
 
-#### Payment
+### Payment
 
 **Payment Type**
 - Credit Card
@@ -125,8 +125,8 @@ Question type controls the input type. Underneath question type the sub-type is 
 - Paypal
 - Other
 
-#### Signature
+### Signature
 
 ## Save, Preview, and Publish Form
 
-Saving should be automatic as changes are made by the user. Preview and Publish buttons should be shown in the sub naviation. Preview should open a new window or a modal with the form as it would look to the end user. Publish would make the form live and available to the end user as well as providing location info with a link to view the form. 
+Saving should be automatic as changes are made by the user. Preview and Publish buttons should be shown in the sub navigation. Preview should open a new window or a modal with the form as it would look to the end user. Publish would make the form live and available to the end user as well as providing location info with a link to view the form. 
