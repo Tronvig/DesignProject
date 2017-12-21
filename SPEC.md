@@ -60,8 +60,10 @@ Question type controls the input type. Underneath question type the sub-type is 
 **Number Type**
 - Number
 - Currency
+
 **Currency Type**
 - [list of available currencies]
+
 **Decimal Places**
 
 ### Dropdown
@@ -71,6 +73,7 @@ Question type controls the input type. Underneath question type the sub-type is 
 ### Multiple Choice
 
 **Number of Choices**
+
 **Choice Type**
 - Single Choice
 - Multiple Choice
@@ -80,16 +83,22 @@ Question type controls the input type. Underneath question type the sub-type is 
 **Scale Type**
 - Points
 - Stars
+
 **Number of Points**
+
 **Endpoints** (example: low / strongly disagree to high / strongly agree)
+
 **Point Labels** 
 
 
 ### Grid (Multiple Choice Scale)
 
 **Number of Questions**
+
 **Number of Columns**
+
 **Column Labels** (example: strongly disagree, disagree, agree, strongly agree)
+
 **Choice Type**
 - Single Choice
 - Multiple Choice
@@ -105,6 +114,7 @@ Question type controls the input type. Underneath question type the sub-type is 
 **Time Type**
 - Standard
 - Military
+
 **Timezone**
 
 ### Picture
