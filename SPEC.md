@@ -130,3 +130,4 @@ Question type controls the input type. Underneath question type the sub-type is 
 ## Save, Preview, and Publish Form
 
 Saving should be automatic as changes are made by the user. Preview and Publish buttons should be shown in the sub navigation. Preview should open a new window or a modal with the form as it would look to the end user. Publish would make the form live and available to the end user as well as providing location info with a link to view the form. 
+
