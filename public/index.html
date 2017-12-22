@@ -1,0 +1,166 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Form Creation App | Matt Tronvig</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Form Creation App for Design Project">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link href="//www.google-analytics.com" rel="dns-prefetch">
+    <link href="//ajax.googleapis.com" rel="dns-prefetch">
+    <link href="//fonts.googleapis.com/css?family=Merriweather|Playfair+Display:400,700,700i|Source+Sans+Pro" rel="stylesheet">
+    <link href="assets/css/style.min.css?v=1" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
+    <script src="assets/components/modernizr/modernizr.js"></script>
+  </head>
+  <body class="preload">
+
+    <!-- Main Content -->
+    <main class="main" role="main">
+
+      <header>
+        <div class="logo"><a href="/">BriteCore</a></div>
+        <nav>
+          <ul class="nav nav-main">
+            <li><a class="active" href="#">Core</a></li>
+            <li><a href="#">Data</a></li>
+            <li><a href="#">Digital</a></li>
+            <li><a href="#">Templates</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Account</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="sub-head">
+        <h1>Auto Policy <a class="icon--chevron" href="#"></a></h1>
+        <nav>
+          <ul class="nav nav-sub">
+            <li><a class="button">Settings</a></li>
+            <li><a class="button">Preview</a></li>
+            <li><a class="button">Publish</a></li>
+            <li><a class="button">New Form</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <aside class="controls">
+        <form id="question-controls">
+          <div>
+            <h3>Values</h3>
+            <textarea name="dropdown-values" rows="10" cols="30">
+Acura
+Alfa Romeo
+Aston Martin
+Audi
+BMW
+Buick
+Cadillac
+Chevrolet
+Chrysler
+Dodge
+Fiat
+Ford
+GMC
+Honda
+Hyundai
+Infiniti
+Jaguar
+Jeep
+Kia
+Land Rover
+Lexus
+Lincoln
+Lotus
+Maserati
+Mazda
+Mercedes Benz
+Mini
+Mitsubishi
+Mobility Ventures
+Nissan
+Porsche
+Ram
+Rolls Royce
+Scion
+Smart
+Subaru
+Suzuki
+Tesla
+Toyota
+Vehicle Production Group
+Volkswagen
+Volvo
+            </textarea>
+          </div>
+          <div>
+            <h3>Answers</h3>
+            <input type="radio" name="answers" value="single-choice" id="single-choice"><label for="single-choice">Single Choice</label>
+            <input type="radio" name="answers" value="multiple-choice" id="multiple-choice"><label for="multiple-choice">Multiple Choice</label>
+          </div>
+          <div>
+            <h3>Validation</h3>
+            <input type="checkbox" name="validation" value="required" id="validation-required"><label for="single-choice">Single Choice</label>
+            <input type="checkbox" name="validation" value="custom" id="validation-custom"><label for="multiple-choice">Multiple Choice</label>
+          </div>
+        </form>
+      </aside>
+      <section class="group">
+        <div class="group-header">
+          <a class="expand-collapse" href="#">
+          <h2>Auto Details - Page 2</h2>
+          <div class="group-settings">
+            <a href="#">Group Settings <span class="icon--chevron"></span></a>
+          </div>
+        </div>
+        <div class="question question-one">
+          <div class="question-header">
+            <div class="question-info">
+              <a class="reorder" href="#"></a>
+              <span class="question-number">1</span>
+              <span class="question-name">Auto Make</span>
+            </div>
+            <div class="question-actions">
+              <a class="action action-logic" href="#"></a>
+              <a class="action action-hide" href="#"></a>
+              <a class="action action-copy" href="#"></a>
+              <a class="action action-settings" href="#"></a>
+              <a class="action action-delete" href="#"></a>
+            </div>
+          </div>
+          <div class="question-body">
+            <h4>Select the Make:</h4>
+            <select>
+              <option>Choose make</option>
+            </select>
+            <a href="#">Modify Values</a>
+            <div class="logic">
+              <span class="icon--eye"></span>
+              <span class="logic-display">Display if: </span>
+              <span class="logic-question">Vehicle type = </span>
+              <span class="logic-answer">Automobile</span>
+            </div>
+          </div>
+        </div>
+        <!-- Add Question -->
+        <!-- Question 2 -->
+        <!-- Question 3 -->
+        <!-- Question 4 -->
+        <!-- Question 5 -->
+        <!-- Question 6 -->
+        <!-- Add Group -->
+        <!-- Add Page Break -->
+      </section>
+
+    </main>
+
+    <script src="assets/components/jquery/jquery.min.js"></script>
+    <script src="assets/js/scripts.min.js"></script>
+
+  </body>
+</html>
