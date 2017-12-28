@@ -1,3 +1,17 @@
+# Matt Tronvig - Design Team Project Submission
+
+Development: 
+
+1- `npm install`
+2- `gulp`
+
+Gulp generates css & js to `public/assets/css` and `public/assets/js` from sass and js in `src/sass` and `src/js`. All other files are static. 
+
+# Built with Fastshell & Skeleton
+
+* Fastshell: [github.com/HosseinKarami/fastshell](http://github.com/HosseinKarami/fastshell)
+* Skeleton: [www.getskeleton.com](http://www.getskeleton.com)
+
 # Design Team Project
 
 This outlines a recent problem we ran into and came up with a design solution for. We'd like to see how you would handle it. What is most important is gaining some insight into your design process and seeing how you work.
