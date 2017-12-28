@@ -1,10 +1,545 @@
-// Media Queries
+// Header
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-// Note: The best way to structure the use of media queries is to create the queries
-// near the relevant code. For example, if you wanted to change the styles for buttons
-// on small devices, paste the mobile query code up in the buttons section and style it
-// there.
+header {
+  background-color: white;
+  display: block;
+  height: 26px;
+  padding: $padding;
+
+  .logo {
+
+    a {
+      display: inline-block;
+      width: 140px;
+      height: auto;
+      margin-top: 3px;
+      text-indent: -9000px;
+      background: transparent url(../img/britecore-logo.png) top left no-repeat;
+      background-size: contain;
+    }
+  }
+
+  .nav {
+    li {
+      display: none;
+
+      a {
+        color: $medium-grey;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 5px;
+        font-size: 1.3rem;
+        font-weight: bold;
+        letter-spacing: 0.15rem;
+
+        &.active,
+        &:hover {
+          color: $bc-teal;
+        }
+      }
+    }
+  } // .nav
+
+  .mobile-nav {
+    display: inline-block;
+
+    .icon-hamburger {
+      color: $medium-grey;
+      transition: 0.1s transform linear;
+      position: absolute;
+      top: $margin;
+      right: $margin;
+      background: 0;
+      height: 18px;
+      width: 28px;
+      z-index: 1;
+      outline: 0;
+      padding: 0;
+      border: 0;
+
+      .bar {
+        &, &::before, &::after {
+          transition:
+            180ms background cubic-bezier(0.680, -0.550, 0.265, 1.550) 180ms,
+            180ms top cubic-bezier(0.680, -0.550, 0.265, 1.550) 180ms,
+            180ms transform cubic-bezier(0.680, -0.550, 0.265, 1.550);
+          position: absolute;
+          background: $medium-grey;
+          margin: auto;
+          width: 100%;
+          height: 0.3rem;
+          content: '';
+          top: 50%;
+          left: 0;
+        }
+
+        & {
+          margin-top: 0;
+        }
+
+        &::before {
+          top: -0.9rem;
+        }
+
+        &::after {
+          top: 0.9rem;
+        }
+
+        &::before,
+        &::after {
+          transform: rotate(0deg);
+        }
+      }
+    }
+  }
+
+  @media (#{$bp-larger-than-mobile}) {
+    .nav {
+      li {
+        display: inline-block;
+      }
+    }
+
+    .mobile-nav {
+      display: none;
+    }
+  }
+
+} // header
+
+.sub-head {
+  padding: $padding $padding 0;
+  height: 50px;
+
+  h1 {
+    display: inline-block;
+    font-size: 2.4rem;
+
+    a {
+      color: $font-color;
+      text-decoration: none;
+
+      &:hover {
+        color: $bc-teal;
+      }
+    }
+  }
+  nav {
+    display: inline-block;
+    float: right;
+
+    .nav {
+
+      li {
+        display: none;
+
+        .button {
+          padding: 0 $padding;
+          height: 30px;
+          line-height: 27px;
+
+          &:hover {
+            color: $bc-teal;
+            border-color: $bc-teal;
+          }
+        }
+
+        &.preview {
+          display: inline-block;
+          margin-right: 0;
+
+          span {
+            display: inline-block;
+            width: 20px;
+            vertical-align: middle;
+            background-size: 10px 6px;
+          }
+        }
+      }
+    } // .nav
+  } // nav
+
+  @media (#{$bp-larger-than-mobile}) {
+    nav {
+      .nav {
+        li {
+          display: inline-block;
+
+          &.preview {
+            margin-right: $margin;
+
+            span {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+} // .sub-head
+
+.form-details {
+  margin: 0 $margin;
+  background-color: $soft-grey;
+  border: 1px solid #e5e8ec;
+  position: relative;
+}
+
+.group {
+  padding: $padding;
+
+  @media (#{$bp-larger-than-mobile}) {
+    padding-right: 0;
+  }
+
+  .group-header {
+    h2 {
+      display: inline-block;
+      font-size: 1.4rem;
+
+      a {
+        font-weight: 100;
+        text-decoration: none;
+        color: $medium-grey;
+      }
+    }
+
+    .group-settings {
+      float: right;
+
+      a {
+        font-size: 1.4rem;
+        font-weight: 100;
+        text-decoration: none;
+        color: $medium-grey;
+      }
+
+      .icon--chevron {
+        margin: 0 5px;
+        width: 10px;
+        height: 14px;
+        background-size: contain;
+      }
+    }
+  } // .group-header
+
+  .question {
+    margin: 0 0 $margin;
+    background-color: #f9f9fA;
+    border-radius: 8px;
+    box-shadow: none;
+    transition: all 0.3s cubic-bezier(.26,.8,.26,1);
+
+    &:hover {
+      box-shadow: 0 4px 8px rgba(0,0,0,0.26), 0 3px 5px rgba(0,0,0,0.22);
+    }
+
+    .question-info {
+      border-bottom: 1px solid $soft-grey;
+      padding: 3px 5px;
+
+      span {
+        color: $medium-grey;
+        font-size: 1.2rem;
+        padding: 5px 3px;
+      }
+    }
+
+    .question-actions {
+      opacity: 0;
+      display: inline-block;
+      float: right;
+      padding-right: 5px;
+
+      .action {
+        line-height: 35px;
+        margin: 5px 5px 0 0;
+        display: inline-block;
+        width: 17px;
+        height: 17px;
+      }
+    }
+
+    .question-body {
+      padding: $padding/2;
+
+      h4 {
+        margin: $margin/2 0;
+      }
+
+      > select {
+        margin-right: $margin/2;
+      }
+
+      label {
+        font-weight: 300;
+        display: inline-block;
+        padding: 0 5px;
+      }
+
+      .logic {
+        margin-top: $margin/2;
+        height: 24px;
+        border-radius: 4px;
+        background-color: $soft-grey;
+
+        span {
+          font-size: 1.2rem;
+          line-height: 24px;
+          vertical-align: bottom;
+
+          &.logic-display {
+            color: $medium-grey;
+          }
+        }
+
+        .logic-icon-display {
+          display: inline-block;
+          margin-right: 5px;
+          width: 24px;
+          height: 24px;
+          line-height: 24px;
+          vertical-align: top;
+          background: transparent url(../img/logic-display.png) center center no-repeat;
+          background-size: 24px 24px;
+        }
+        .logic-icon-settings {
+          opacity: 0;
+          float: right;
+          display: inline-block;
+          margin-right: 5px;
+          width: 24px;
+          height: 24px;
+          line-height: 24px;
+          vertical-align: top;
+          background: transparent url(../img/logic-settings.png) center center no-repeat;
+          background-size: 11px 11px;
+        }
+      }
+    }
+
+    &.active,
+    &:hover {
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+      &:hover {
+        box-shadow: 0 4px 8px rgba(0,0,0,0.25), 0 3px 5px rgba(0,0,0,0.22);
+      }
+
+      .question-actions {
+        opacity: 1;
+      }
+
+      .logic {
+        .logic-icon-settings {
+          opacity: 1;
+        }
+      }
+    }
+
+  } // .question
+
+  .add-question {
+    display: block;
+    margin-bottom: $margin;
+    text-align: center;
+
+    a {
+      color: $medium-grey;
+      text-decoration: none;
+
+      &:hover {
+        color: $bc-teal;
+
+        .icon--add {
+          background: transparent url(../img/icon-add-hover.png) center center no-repeat;
+          background-size: 15px 15px;
+        }
+      }
+    }
+  }
+
+  .group-controls {
+
+    .button {
+      padding: 0 $padding;
+      height: 30px;
+      line-height: 30px;
+
+      &:hover {
+        color: $bc-teal;
+        border-color: $bc-teal;
+      }
+    }
+  }
+} // .group
+
+.controls {
+  display: none;
+  background-color: white;
+  padding: $padding;
+  min-height: 100vh;
+  position: relative;
+
+  &.fixed {
+    position: fixed;
+    top: 0;
+    right: $margin+1;
+    width: 29.2%; // width should not need to be changed, todo: find out why.
+  }
+
+  @media (#{$bp-larger-than-mobile}) {
+    display: block;
+  }
+
+  form > div {
+    margin-bottom: $margin/2;
+  }
+
+  h3 {
+    color: $medium-grey;
+    font-size: 1.4rem;
+    margin-bottom: 1.0rem;
+  }
+
+  select,
+  textarea {
+    width: 100%;
+
+    &.type {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      color: white;
+      border-color: $bc-teal;
+      background-color: $bc-teal;
+      background-image: url(../img/icon-dropdown.png),
+                        url(../img/icon-chevron-white.png);
+      background-repeat: no-repeat, no-repeat;
+      background-size: 16px 16px, 10px 6px;
+      background-position: 10px center, 95% center;
+      padding: 2px 2px 2px 35px;
+    }
+  }
+
+  label {
+    font-weight: 300;
+    display: inline-block;
+    padding: 0 5px;
+  }
+} // .controls
+
+.nav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: right;
+
+  li {
+    display: inline-block;
+    margin-right: $margin;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}  // .nav
+
+// Icons
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+[class^="icon--"] {
+  display: inline-block;
+  vertical-align: middle;
+  width: 28px;
+  height: 28px;
+}
+
+.icon--profile {
+  width: 20px;
+  height: 20px;
+  background: transparent url(../img/icon-profile.png) center center no-repeat;
+  background-size: 20px 20px;
+}
+
+.icon--chevron {
+  vertical-align: text-bottom;
+  background: transparent url(../img/icon-chevron.png) center center no-repeat;
+  background-size: 12px 8px;
+}
+
+.icon--reorder {
+  cursor: move;
+  background: transparent url(../img/icon-move.png) center center no-repeat;
+  background-size: 16px 16px;
+
+  &:hover {
+    background: transparent url(../img/icon-move-hover.png) center center no-repeat;
+    background-size: 16px 16px;
+  }
+}
+
+.icon--logic {
+  background: transparent url(../img/icon-logic.png) center center no-repeat;
+  background-size: 17px 17px;
+
+  &:hover {
+    background: transparent url(../img/icon-logic-hover.png) center center no-repeat;
+    background-size: 17px 17px;
+  }
+}
+
+.icon--display {
+  background: transparent url(../img/icon-display.png) center center no-repeat;
+  background-size: 17px 17px;
+
+  &:hover {
+    background: transparent url(../img/icon-display-hover.png) center center no-repeat;
+    background-size: 17px 17px;
+  }
+}
+
+.icon--copy {
+  background: transparent url(../img/icon-copy.png) center center no-repeat;
+  background-size: 17px 17px;
+
+  &:hover {
+    background: transparent url(../img/icon-copy-hover.png) center center no-repeat;
+    background-size: 17px 17px;
+  }
+}
+
+.icon--settings {
+  background: transparent url(../img/icon-settings.png) center center no-repeat;
+  background-size: 17px 17px;
+
+  &:hover {
+    background: transparent url(../img/icon-settings-hover.png) center center no-repeat;
+    background-size: 17px 17px;
+  }
+}
+
+.icon--delete {
+  background: transparent url(../img/icon-delete.png) center center no-repeat;
+  background-size: 17px 17px;
+
+  &:hover {
+    background: transparent url(../img/icon-delete-hover.png) center center no-repeat;
+    background-size: 17px 17px;
+  }
+}
+
+.icon--add {
+  background: transparent url(../img/icon-add.png) center center no-repeat;
+  background-size: 15px 15px;
+}
+
+
+// Media Queries
+//––––––––––––––––––––––––––––––––––––––––––––––––––
 
 // Larger than mobile
 @media (#{$bp-larger-than-mobile}) {}

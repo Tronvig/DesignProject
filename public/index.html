@@ -10,7 +10,7 @@
 
     <link href="//www.google-analytics.com" rel="dns-prefetch">
     <link href="//ajax.googleapis.com" rel="dns-prefetch">
-    <link href="//fonts.googleapis.com/css?family=Merriweather|Playfair+Display:400,700,700i|Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="assets/css/style.min.css?v=1" rel="stylesheet">
 
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
@@ -23,139 +23,475 @@
     <!-- Main Content -->
     <main class="main" role="main">
 
-      <header>
-        <div class="logo"><a href="/">BriteCore</a></div>
-        <nav>
+      <header class="row">
+        <div class="logo one-third column"><a href="/">BriteCore</a></div>
+        <nav class="two-thirds column">
           <ul class="nav nav-main">
             <li><a class="active" href="#">Core</a></li>
             <li><a href="#">Data</a></li>
             <li><a href="#">Digital</a></li>
             <li><a href="#">Templates</a></li>
             <li><a href="#">Help</a></li>
-            <li><a href="#">Account</a></li>
+            <li><a class="icon--profile" title="Profile" href="#"></a></li>
           </ul>
+          <div class="mobile-nav">
+            <a class="icon-hamburger" href="#">
+              <span class="bar"></span>
+            </a>
+          </div>
         </nav>
       </header>
 
-      <div class="sub-head">
-        <h1>Auto Policy <a class="icon--chevron" href="#"></a></h1>
-        <nav>
-          <ul class="nav nav-sub">
-            <li><a class="button">Settings</a></li>
-            <li><a class="button">Preview</a></li>
-            <li><a class="button">Publish</a></li>
-            <li><a class="button">New Form</a></li>
-          </ul>
-        </nav>
+      <div class="sub-head row">
+        <div class="twelve columns">
+          <h1><a href="#">Auto Policy <span class="icon--chevron"></span></a></h1>
+          <nav>
+            <ul class="nav nav-sub">
+              <li class="preview"><a class="button">Preview<span class="icon--chevron"></span></a></li>
+              <li><a class="button">Publish</a></li>
+              <li><a class="button">Settings</a></li>
+              <li><a class="button">New Form</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
 
-      <aside class="controls">
-        <form id="question-controls">
-          <div>
-            <h3>Values</h3>
-            <textarea name="dropdown-values" rows="10" cols="30">
-Acura
-Alfa Romeo
-Aston Martin
-Audi
-BMW
-Buick
-Cadillac
-Chevrolet
-Chrysler
-Dodge
-Fiat
-Ford
-GMC
-Honda
-Hyundai
-Infiniti
-Jaguar
-Jeep
-Kia
-Land Rover
-Lexus
-Lincoln
-Lotus
-Maserati
-Mazda
-Mercedes Benz
-Mini
-Mitsubishi
-Mobility Ventures
-Nissan
-Porsche
-Ram
-Rolls Royce
-Scion
-Smart
-Subaru
-Suzuki
-Tesla
-Toyota
-Vehicle Production Group
-Volkswagen
-Volvo
-            </textarea>
-          </div>
-          <div>
-            <h3>Answers</h3>
-            <input type="radio" name="answers" value="single-choice" id="single-choice"><label for="single-choice">Single Choice</label>
-            <input type="radio" name="answers" value="multiple-choice" id="multiple-choice"><label for="multiple-choice">Multiple Choice</label>
-          </div>
-          <div>
-            <h3>Validation</h3>
-            <input type="checkbox" name="validation" value="required" id="validation-required"><label for="single-choice">Single Choice</label>
-            <input type="checkbox" name="validation" value="custom" id="validation-custom"><label for="multiple-choice">Multiple Choice</label>
-          </div>
-        </form>
-      </aside>
-      <section class="group">
-        <div class="group-header">
-          <a class="expand-collapse" href="#">
-          <h2>Auto Details - Page 2</h2>
-          <div class="group-settings">
-            <a href="#">Group Settings <span class="icon--chevron"></span></a>
-          </div>
-        </div>
-        <div class="question question-one">
-          <div class="question-header">
-            <div class="question-info">
-              <a class="reorder" href="#"></a>
-              <span class="question-number">1</span>
-              <span class="question-name">Auto Make</span>
-            </div>
-            <div class="question-actions">
-              <a class="action action-logic" href="#"></a>
-              <a class="action action-hide" href="#"></a>
-              <a class="action action-copy" href="#"></a>
-              <a class="action action-settings" href="#"></a>
-              <a class="action action-delete" href="#"></a>
+      <div class="form-details row">
+        <section class="eight columns group">
+          <div class="group-header">
+            <h2><a class="expand-collapse" href="#">Auto Details - Page 2</a></h2>
+            <div class="group-settings">
+              <a href="#">Group Settings <span class="icon--chevron"></span></a>
             </div>
           </div>
-          <div class="question-body">
-            <h4>Select the Make:</h4>
-            <select>
-              <option>Choose make</option>
-            </select>
-            <a href="#">Modify Values</a>
-            <div class="logic">
-              <span class="icon--eye"></span>
-              <span class="logic-display">Display if: </span>
-              <span class="logic-question">Vehicle type = </span>
-              <span class="logic-answer">Automobile</span>
+          <!-- Question 1 -->
+          <div class="question question-1 active">
+            <div class="question-header">
+              <div class="question-info">
+                <a class="icon--reorder" href="#"></a>
+                <span class="question-number">1</span>
+                <span class="question-name">Auto Make</span>
+
+                <div class="question-actions">
+                  <a class="action action-logic icon--logic" href="#"></a>
+                  <a class="action action-hide icon--display" href="#"></a>
+                  <a class="action action-copy icon--copy" href="#"></a>
+                  <a class="action action-settings icon--settings" href="#"></a>
+                  <a class="action action-delete icon--delete" href="#"></a>
+                </div>
+              </div>
+            </div>
+            <div class="question-body">
+              <h4>Select the Make:</h4>
+              <select>
+                <option>Choose make</option>
+                <option>Acura</option>
+                <option>Alfa Romeo</option>
+                <option>Aston Martin</option>
+                <option>Audi</option>
+                <option>BMW</option>
+                <option>Buick</option>
+                <option>Cadillac</option>
+                <option>Chevrolet</option>
+                <option>Chrysler</option>
+                <option>Dodge</option>
+                <option>Fiat</option>
+                <option>Ford</option>
+                <option>GMC</option>
+                <option>Honda</option>
+                <option>Hyundai</option>
+                <option>Infiniti</option>
+                <option>Jaguar</option>
+                <option>Jeep</option>
+                <option>Kia</option>
+                <option>Land Rover</option>
+                <option>Lexus</option>
+                <option>Lincoln</option>
+                <option>Lotus</option>
+                <option>Maserati</option>
+                <option>Mazda</option>
+                <option>Mercedes Benz</option>
+                <option>Mini</option>
+                <option>Mitsubishi</option>
+                <option>Mobility Ventures</option>
+                <option>Nissan</option>
+                <option>Porsche</option>
+                <option>Ram</option>
+                <option>Rolls Royce</option>
+                <option>Scion</option>
+                <option>Smart</option>
+                <option>Subaru</option>
+                <option>Suzuki</option>
+                <option>Tesla</option>
+                <option>Toyota</option>
+                <option>Vehicle Production Group</option>
+                <option>Volkswagen</option>
+                <option>Volvo</option>
+              </select>
+              <a href="#">Modify Values</a>
+              <div class="logic">
+                <span class="logic-icon-display"></span>
+                <span class="logic-display">Display if: </span>
+                <span class="logic-question">Vehicle type = </span>
+                <span class="logic-answer">Automobile</span>
+                <a class="logic-icon-settings" href="#"></a>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Add Question -->
-        <!-- Question 2 -->
-        <!-- Question 3 -->
-        <!-- Question 4 -->
-        <!-- Question 5 -->
-        <!-- Question 6 -->
-        <!-- Add Group -->
-        <!-- Add Page Break -->
-      </section>
+          <!-- Add Question -->
+          <div class="question-one add-question">
+            <a href="#"><span class="icon--add"></span> Add Question</a>
+          </div>
+          <!-- Question 2 -->
+          <div class="question question-2">
+            <div class="question-header">
+              <div class="question-info">
+                <a class="icon--reorder" href="#"></a>
+                <span class="question-number">2</span>
+                <span class="question-name">Auto Model</span>
+
+                <div class="question-actions">
+                  <a class="action action-logic icon--logic" href="#"></a>
+                  <a class="action action-hide icon--display" href="#"></a>
+                  <a class="action action-copy icon--copy" href="#"></a>
+                  <a class="action action-settings icon--settings" href="#"></a>
+                  <a class="action action-delete icon--delete" href="#"></a>
+                </div>
+              </div>
+            </div>
+            <div class="question-body">
+              <h4>Select the Model:</h4>
+              <select>
+                <option>Choose model</option>
+              </select>
+              <a href="#">Modify Values</a>
+              <div class="logic">
+                <span class="logic-icon-display"></span>
+                <span class="logic-display">Display if: </span>
+                <span class="logic-question">Vehicle type = </span>
+                <span class="logic-answer">Automobile</span>
+                <a class="logic-icon-settings" href="#"></a>
+              </div>
+            </div>
+          </div>
+          <!-- Question 3 -->
+          <div class="question question-3">
+            <div class="question-header">
+              <div class="question-info">
+                <a class="icon--reorder" href="#"></a>
+                <span class="question-number">3</span>
+                <span class="question-name">Vehicle Year</span>
+
+                <div class="question-actions">
+                  <a class="action action-logic icon--logic" href="#"></a>
+                  <a class="action action-hide icon--display" href="#"></a>
+                  <a class="action action-copy icon--copy" href="#"></a>
+                  <a class="action action-settings icon--settings" href="#"></a>
+                  <a class="action action-delete icon--delete" href="#"></a>
+                </div>
+              </div>
+            </div>
+            <div class="question-body">
+              <h4>Select the Year:</h4>
+              <select>
+                <option>Choose year</option>
+              </select>
+              <a href="#">Modify Values</a>
+            </div>
+          </div>
+          <!-- Question 4 -->
+          <div class="question question-4">
+            <div class="question-header">
+              <div class="question-info">
+                <a class="icon--reorder" href="#"></a>
+                <span class="question-number">4</span>
+                <span class="question-name">Ownership</span>
+
+                <div class="question-actions">
+                  <a class="action action-logic icon--logic" href="#"></a>
+                  <a class="action action-hide icon--display" href="#"></a>
+                  <a class="action action-copy icon--copy" href="#"></a>
+                  <a class="action action-settings icon--settings" href="#"></a>
+                  <a class="action action-delete icon--delete" href="#"></a>
+                </div>
+              </div>
+            </div>
+            <div class="question-body">
+              <h4>Is the vehicle owned, leased, or financed?</h4>
+              <input type="radio" name="ownership" value="owned" id="ownership-owned">
+              <label for="ownership-owned">Owned</label>
+              <br>
+              <input type="radio" name="ownership" value="leased" id="ownership-leased">
+              <label for="ownership-leased">Leased</label>
+              <br>
+              <input type="radio" name="ownership" value="owned" id="ownership-financed">
+              <label for="ownership-financed">Financed</label>
+            </div>
+          </div>
+          <!-- Question 5 -->
+          <div class="question question-5">
+            <div class="question-header">
+              <div class="question-info">
+                <a class="icon--reorder" href="#"></a>
+                <span class="question-number">5</span>
+                <span class="question-name">Usage</span>
+
+                <div class="question-actions">
+                  <a class="action action-logic icon--logic" href="#"></a>
+                  <a class="action action-hide icon--display" href="#"></a>
+                  <a class="action action-copy icon--copy" href="#"></a>
+                  <a class="action action-settings icon--settings" href="#"></a>
+                  <a class="action action-delete icon--delete" href="#"></a>
+                </div>
+              </div>
+            </div>
+            <div class="question-body">
+              <h4>How is this vehicle primarily used?</h4>
+              <input type="radio" name="usage" value="owned" id="usage-commuting">
+              <label for="usage-commuting">Commuting</label>
+              <br>
+              <input type="radio" name="usage" value="leased" id="usage-pleasure">
+              <label for="usage-pleasure">Pleasure</label>
+              <br>
+              <input type="radio" name="usage" value="owned" id="usage-business">
+              <label for="usage-business">Business</label>
+            </div>
+          </div>
+          <!-- Question 6 -->
+          <div class="question question-6">
+            <div class="question-header">
+              <div class="question-info">
+                <a class="icon--reorder" href="#"></a>
+                <span class="question-number">6</span>
+                <span class="question-name">Mileage</span>
+
+                <div class="question-actions">
+                  <a class="action action-logic icon--logic" href="#"></a>
+                  <a class="action action-hide icon--display" href="#"></a>
+                  <a class="action action-copy icon--copy" href="#"></a>
+                  <a class="action action-settings icon--settings" href="#"></a>
+                  <a class="action action-delete icon--delete" href="#"></a>
+                </div>
+              </div>
+            </div>
+            <div class="question-body">
+              <h4>Days driven to work and/or school:</h4>
+              <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+              </select>
+              <br>
+              <h4>Miles driven per commute:</h4>
+              <input type="text">
+              <br>
+              <h4>Estimated Annual Mileage:</h4>
+              <select>
+                <option>Estimate mileage</option>
+                <option>5,000</option>
+                <option>10,000</option>
+                <option>20,000</option>
+                <option>30,000</option>
+                <option>40,000</option>
+                <option>50,000</option>
+                <option>60,000</option>
+                <option>70,000</option>
+                <option>80,000</option>
+                <option>90,000</option>
+                <option>100,000</option>
+              </select>
+              <a href="#">Modify Values</a>
+              <div class="logic">
+                <span class="logic-icon-display"></span>
+                <span class="logic-display">Display if: </span>
+                <span class="logic-question">Usage = </span>
+                <span class="logic-answer">Commuting</span>
+                <a class="logic-icon-settings" href="#"></a>
+              </div>
+            </div>
+          </div>
+          <!-- Question 7 -->
+          <div class="question question-7">
+            <div class="question-header">
+              <div class="question-info">
+                <a class="icon--reorder" href="#"></a>
+                <span class="question-number">7</span>
+                <span class="question-name">Mileage</span>
+
+                <div class="question-actions">
+                  <a class="action action-logic icon--logic" href="#"></a>
+                  <a class="action action-hide icon--display" href="#"></a>
+                  <a class="action action-copy icon--copy" href="#"></a>
+                  <a class="action action-settings icon--settings" href="#"></a>
+                  <a class="action action-delete icon--delete" href="#"></a>
+                </div>
+              </div>
+            </div>
+            <div class="question-body">
+              <h4>Estimated Annual Mileage:</h4>
+              <select>
+                <option>Estimate mileage</option>
+                <option>5,000</option>
+                <option>10,000</option>
+                <option>20,000</option>
+                <option>30,000</option>
+                <option>40,000</option>
+                <option>50,000</option>
+                <option>60,000</option>
+                <option>70,000</option>
+                <option>80,000</option>
+                <option>90,000</option>
+                <option>100,000</option>
+              </select>
+              <a href="#">Modify Values</a>
+              <div class="logic">
+                <span class="logic-icon-display"></span>
+                <span class="logic-display">Display if: </span>
+                <span class="logic-question">Usage = </span>
+                <span class="logic-answer">Pleasure</span>
+                <a class="logic-icon-settings" href="#"></a>
+              </div>
+            </div>
+          </div>
+          <!-- Question 8 -->
+          <div class="question question-8">
+            <div class="question-header">
+              <div class="question-info">
+                <a class="icon--reorder" href="#"></a>
+                <span class="question-number">8</span>
+                <span class="question-name">Mileage</span>
+
+                <div class="question-actions">
+                  <a class="action action-logic icon--logic" href="#"></a>
+                  <a class="action action-hide icon--display" href="#"></a>
+                  <a class="action action-copy icon--copy" href="#"></a>
+                  <a class="action action-settings icon--settings" href="#"></a>
+                  <a class="action action-delete icon--delete" href="#"></a>
+                </div>
+              </div>
+            </div>
+            <div class="question-body">
+              <h4>How is this vehicle used for business?</h4>
+              <select>
+                <option>Choose business</option>
+                <option>Daycare</option>
+                <option>Delivery</option>
+                <option>Ridesharing</option>
+                <option>Sales</option>
+                <option>Transport</option>
+              </select>
+              <a href="#">Modify Values</a>
+              <h4>Estimated Annual Mileage:</h4>
+              <select>
+                <option>Estimate mileage</option>
+                <option>5,000</option>
+                <option>10,000</option>
+                <option>20,000</option>
+                <option>30,000</option>
+                <option>40,000</option>
+                <option>50,000</option>
+                <option>60,000</option>
+                <option>70,000</option>
+                <option>80,000</option>
+                <option>90,000</option>
+                <option>100,000</option>
+              </select>
+              <a href="#">Modify Values</a>
+              <div class="logic">
+                <span class="logic-icon-display"></span>
+                <span class="logic-display">Display if: </span>
+                <span class="logic-question">Usage = </span>
+                <span class="logic-answer">Business</span>
+                <a class="logic-icon-settings" href="#"></a>
+              </div>
+            </div>
+          </div>
+          <!-- Add Group & Add Page Break -->
+          <div class="group-controls">
+            <a class="button">Add Question</a>
+            <a class="button">Add Group</a>
+            <a class="button">Add Pagebreak</a>
+          </div>
+        </section>
+        <aside class="four columns controls">
+          <form id="question-controls">
+            <div>
+              <h3>Change Question Type</h3>
+              <select class="type">
+                <span class="icon--chevron"></span>
+                <option>Dropdown</option>
+              </select>
+            </div>
+            <div>
+              <h3>Values</h3>
+              <textarea name="dropdown-values" rows="110" cols="310">
+  Acura
+  Alfa Romeo
+  Aston Martin
+  Audi
+  BMW
+  Buick
+  Cadillac
+  Chevrolet
+  Chrysler
+  Dodge
+  Fiat
+  Ford
+  GMC
+  Honda
+  Hyundai
+  Infiniti
+  Jaguar
+  Jeep
+  Kia
+  Land Rover
+  Lexus
+  Lincoln
+  Lotus
+  Maserati
+  Mazda
+  Mercedes Benz
+  Mini
+  Mitsubishi
+  Mobility Ventures
+  Nissan
+  Porsche
+  Ram
+  Rolls Royce
+  Scion
+  Smart
+  Subaru
+  Suzuki
+  Tesla
+  Toyota
+  Vehicle Production Group
+  Volkswagen
+  Volvo
+              </textarea>
+            </div>
+            <div>
+              <h3>Answers</h3>
+              <input type="radio" name="answers" value="single-choice" id="single-choice" checked="checked">
+              <label for="single-choice">Single Choice</label>
+              <br>
+              <input type="radio" name="answers" value="multiple-choice" id="multiple-choice">
+              <label for="multiple-choice">Multiple Choice</label>
+            </div>
+            <div>
+              <h3>Validation</h3>
+              <input type="checkbox" name="validation" value="required" id="validation-required" checked="checked">
+              <label for="validation-required">Required</label>
+              <br>
+              <input type="checkbox" name="validation" value="custom" id="validation-custom">
+              <label for="validation-custom">Custom Validation</label>
+            </div>
+          </form>
+        </aside>
+      </div>
 
     </main>
 

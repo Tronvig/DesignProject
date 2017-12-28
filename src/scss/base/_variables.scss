@@ -1,6 +1,10 @@
 // Variables
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
+// Padding & Margins
+$margin: 20px !default;
+$padding: 20px !default;
+
 // Breakpoints
 $bp-larger-than-mobile    : "min-width: 400px" !default;
 $bp-larger-than-phablet   : "min-width: 550px" !default;
@@ -16,17 +20,20 @@ $bp-desktop   : 'max-width: 1200px' !default;
 $bp-desktophd : 'max-width: 1200px' !default;
 
 // Colors
+$bc-teal: #0091ab !default;
 $light-grey: #e1e1e1 !default;
+$soft-grey: #f1f3f5 !default;
+$medium-grey: #9b9b9b;
 $dark-grey: #333 !default;
 $primary-color: #33c3f0 !default;
 $secondary-color: lighten($dark-grey, 13.5%) !default;
 $border-color: #bbb !default;
 $link-color: #1eaedb !default;
-$font-color: #111111 !default;
+$font-color: #4a4a4a !default;
 $background-color: #eeeeee !default;
 
 // Typography
-$font-family: 'Source Sans Pro', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif !default;
+$font-family: 'Lato', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif !default;
 
 //Grid Variables
 $container-width: 960px !default;
