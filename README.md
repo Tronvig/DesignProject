@@ -7,7 +7,7 @@ Development:
 
 Gulp generates css & js to `public/assets/css` and `public/assets/js` from sass and js in `src/sass` and `src/js`. All other files are static. 
 
-# Built with Fastshell & Skeleton
+## Built with Fastshell & Skeleton
 
 * Fastshell: [github.com/HosseinKarami/fastshell](http://github.com/HosseinKarami/fastshell)
 * Skeleton: [www.getskeleton.com](http://www.getskeleton.com)
