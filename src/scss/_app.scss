@@ -388,11 +388,17 @@ header {
     position: fixed;
     top: 0;
     right: $margin+1;
-    width: 29.2%; // width should not need to be changed, todo: find out why.
+    width: 29.15%; // width should not need to be changed, todo: find out why.
   }
 
   @media (#{$bp-larger-than-mobile}) {
     display: block;
+  }
+
+  @media (#{$bp-larger-than-desktop}) {
+    &.fixed {
+      width: 29.7%;
+    }
   }
 
   form > div {

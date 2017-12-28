@@ -878,10 +878,13 @@ header {
     position: fixed;
     top: 0;
     right: 21px;
-    width: 29.2%; }
+    width: 29.15%; }
   @media (min-width: 400px) {
     .controls {
       display: block; } }
+  @media (min-width: 1000px) {
+    .controls.fixed {
+      width: 29.7%; } }
   .controls form > div {
     margin-bottom: 10px; }
   .controls h3 {
