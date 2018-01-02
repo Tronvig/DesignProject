@@ -1,5 +1,9 @@
 # Matt Tronvig - Design Team Project Submission
 
+Design Process: 
+1- Sketch (pen & pencil) ![Sketch](https://github.com/Tronvig/DesignProject/raw/master/public/assets/img/ux/Form-Creator-App_ui-sketch.png "Sketched app design")
+2- Design (Sketch app) ![Design](https://github.com/Tronvig/DesignProject/raw/master/public/assets/img/ux/Form-Creator-App_v2.png "UX design for app")
+
 Development: 
 
 1- `npm install`
