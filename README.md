@@ -1,11 +1,11 @@
 # Matt Tronvig - Design Team Project Submission
 
 Design Process: 
-1- [Design Spec](../blob/master/SPEC)
+1- [Design Spec](https://github.com/Tronvig/DesignProject/raw/master/SPEC.md)
 
-2- Sketch (pen & pencil) ![Sketch](https://github.com/Tronvig/DesignProject/raw/master/public/assets/img/ux/Form-Creator-App_ui-sketch.png "Sketched Design" =350x)
+2- [Sketch (pen & pencil)](https://github.com/Tronvig/DesignProject/raw/master/public/assets/img/ux/Form-Creator-App_ui-sketch.png)
 
-3- Design (Sketch app) ![Design](https://github.com/Tronvig/DesignProject/raw/master/public/assets/img/ux/Form-Creator-App_v2.png "UX Design" =350x)
+3- [Design (Sketch app)](https://github.com/Tronvig/DesignProject/raw/master/public/assets/img/ux/Form-Creator-App_v2.png)
 
 Development: 
 
